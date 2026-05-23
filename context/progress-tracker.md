@@ -1,0 +1,40 @@
+# Progress Tracker
+
+Update this file whenever the current phase, active feature, or implementation state changes.
+
+## Current Phase
+- Feature 02 (Editor Chrome) — complete
+
+## Current Goal
+- Feature 02 (Editor Chrome)
+
+## Completed
+
+- Feature 01: Design System — shadcn/ui installed and configured for Tailwind v4, dark-only theme tokens in globals.css, Button/Card/Dialog/Input/Tabs/Textarea/ScrollArea components added to components/ui/, lucide-react installed, lib/utils.ts cn() helper in place. TypeScript compiles clean.
+- Feature 02: Editor Chrome — EditorNavbar (fixed top bar, sidebar toggle with PanelLeftOpen/PanelLeftClose, left/center/right sections) and ProjectSidebar (floating overlay, slides in from left, Tabs with My Projects/Shared, New Project button) created in components/editor/. Dialog pattern already satisfied by existing components/ui/dialog.tsx. TypeScript compiles clean.
+
+## In Progress
+
+- None.
+
+## Next Up
+- Feature 03 (TBD)
+
+
+
+## Open Questions
+
+- None yet.
+
+## Architecture Decisions
+
+- shadcn/ui over Tailwind v4 (CSS-based token config via @theme inline in globals.css, no tailwind.config.js).
+- Dark-only theme: all shadcn :root variables set to dark values directly — no .dark class switching.
+- Do not modify generated components/ui/* files after shadcn installation.
+- Next.js 16 uses proxy.ts (not middleware.ts) — same API, renamed to reflect its purpose.
+
+## Session Notes
+
+- Using Next.js 16.2.6 with React 19 and Tailwind CSS v4.
+- shadcn ^4.8.0 was used; it auto-detected Tailwind v4.
+- lucide-react ^1.16.0 installed (pulled in by shadcn init).
