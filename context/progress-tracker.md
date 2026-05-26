@@ -3,22 +3,23 @@
 Update this file whenever the current phase, active feature, or implementation state changes.
 
 ## Current Phase
-- Feature 02 (Editor Chrome) — complete
+- Feature 03 (Auth) — complete
 
 ## Current Goal
-- Feature 02 (Editor Chrome)
+- Feature 03 (Auth)
 
 ## Completed
 
 - Feature 01: Design System — shadcn/ui installed and configured for Tailwind v4, dark-only theme tokens in globals.css, Button/Card/Dialog/Input/Tabs/Textarea/ScrollArea components added to components/ui/, lucide-react installed, lib/utils.ts cn() helper in place. TypeScript compiles clean.
 - Feature 02: Editor Chrome — EditorNavbar (fixed top bar, sidebar toggle with PanelLeftOpen/PanelLeftClose, left/center/right sections) and ProjectSidebar (floating overlay, slides in from left, Tabs with My Projects/Shared, New Project button) created in components/editor/. Dialog pattern already satisfied by existing components/ui/dialog.tsx. TypeScript compiles clean.
+- Feature 03: Auth — ClerkProvider wraps root layout with dark theme from @clerk/ui/themes. proxy.ts protects all routes except /sign-in and /sign-up. Two-panel auth pages (left: logo/tagline/feature list, right: Clerk form; small screens: form only). Root page redirects authenticated users to /editor, unauthenticated to /sign-in. UserButton in EditorNavbar right section. Build passes clean.
 
 ## In Progress
 
 - None.
 
 ## Next Up
-- Feature 03 (TBD)
+- Feature 04 (TBD)
 
 
 
