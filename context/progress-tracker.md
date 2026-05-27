@@ -3,10 +3,10 @@
 Update this file whenever the current phase, active feature, or implementation state changes.
 
 ## Current Phase
-- Feature 04 (Project Dialogs) — complete
+- Feature 05 (Prisma) — complete
 
 ## Current Goal
-- Feature 04 (Project Dialogs)
+- Feature 05 (Prisma)
 
 ## Completed
 
@@ -14,13 +14,14 @@ Update this file whenever the current phase, active feature, or implementation s
 - Feature 02: Editor Chrome — EditorNavbar (fixed top bar, sidebar toggle with PanelLeftOpen/PanelLeftClose, left/center/right sections) and ProjectSidebar (floating overlay, slides in from left, Tabs with My Projects/Shared, New Project button) created in components/editor/. Dialog pattern already satisfied by existing components/ui/dialog.tsx. TypeScript compiles clean.
 - Feature 03: Auth — ClerkProvider wraps root layout with dark theme from @clerk/ui/themes. proxy.ts protects all routes except /sign-in and /sign-up. Two-panel auth pages (left: logo/tagline/feature list, right: Clerk form; small screens: form only). Root page redirects authenticated users to /editor, unauthenticated to /sign-in. UserButton in EditorNavbar right section. Build passes clean.
 - Feature 04: Project Dialogs — editor home screen with heading/description/New Project button, Create/Rename/Delete dialogs (slug preview, auto-focus, destructive confirm), sidebar project items with hover-reveal rename/delete actions (owned only), mobile backdrop scrim, useProjectDialogs hook with mock data, ProjectContext for cross-component access. TypeScript and lint clean.
+- Feature 05: Prisma — upgraded to Prisma v7.8.0 (+ @prisma/client, @prisma/extension-accelerate); created prisma/models/project.prisma with Project and ProjectCollaborator models; created lib/prisma.ts as a cached singleton branching on DATABASE_URL (Accelerate vs direct pg adapter); removed deprecated datasource url from schema.prisma and engine field from prisma.config.ts; migration 20260527135736_init applied; client generated to app/generated/prisma. Build passes clean.
 
 ## In Progress
 
 - None.
 
 ## Next Up
-- Feature 05 (TBD)
+- Feature 06 (TBD)
 
 
 

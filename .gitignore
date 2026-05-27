@@ -42,3 +42,4 @@ next-env.d.ts
 
 
 /context/04-current-project/.gitignore
+/app/generated/prisma
